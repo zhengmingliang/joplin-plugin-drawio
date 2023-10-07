@@ -40,7 +40,7 @@ export class EditorDialog {
     private buildDialogHTML(diagramBody: string, themeUi: string): string {
         return `
             <form name="main">
-                <a href="#" onclick="startDrawio()">Click here to load draw.io if it does not start automatically...</a>
+                <a href="#" onclick="startDrawio()">单击此处加载draw.io（如果它没有自动启动）...</a>
                 <input type="hidden" id="settings" value='${JSON.stringify(this._settings.toObject())}' />
                 <input type="hidden" id="setting-theme-ui" value='${themeUi}' />
                 <input type="hidden" id="diagram" name="diagram" value="${diagramBody}">
@@ -57,8 +57,8 @@ export class EditorDialog {
         await joplin.views.dialogs.addScript(this._handler, './dialog/DiagramEditor.js')
         await joplin.views.dialogs.addScript(this._handler, './dialog/bootstrap.js')
         await joplin.views.dialogs.setButtons(this._handler, [
-            { id: 'ok', title: 'Save' },
-            { id: 'cancel', title: 'Close' },
+            { id: 'ok', title: '保存' },
+            { id: 'cancel', title: '关闭' },
         ])
     }
 

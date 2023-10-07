@@ -50,7 +50,7 @@ export const SettingDefaults = {
         zh: '中文 (中国)',
         'zh-tw': '中文 (台灣)'
     },
-    defaultLanguage: 'en',
+    defaultLanguage: 'zh',
     server: 'https://embed.diagrams.net/',
 }
 
@@ -59,7 +59,7 @@ export class Settings {
     // Settings definitions
     private _config: SettingItems = {
         themeUi: {
-            value: 'en',
+            value: 'zh',
             type: SettingItemType.String,
             section: 'drawio.settings',
             public: true,

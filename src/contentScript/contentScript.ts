@@ -62,7 +62,7 @@ function buildRenderer(contentScriptId: string, renderer: RenderRule) {
                 return `
                     <span class="drawio-container">
                         ${defaultOutput}
-                        <button id="drawio-${diagramId}-edit" style="display:none">Edit</button>
+                        <button id="drawio-${diagramId}-edit" style="display:none">编辑</button>
                     </span>
                     <style onload="${sendContentToJoplinPlugin}"></style>
                 `

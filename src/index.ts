@@ -44,7 +44,7 @@ joplin.plugins.register({
         // Register command
         await joplin.commands.register({
             name: CommandsId.NewDiagramPng,
-            label: 'Create new diagram PNG',
+            label: '创建新的图表(PNG格式)',
             iconName: 'fa fa-pencil',
             execute: async () => {
                 await dialog.new(EmptyDiagram.PNG)
@@ -52,7 +52,7 @@ joplin.plugins.register({
         })
         await joplin.commands.register({
             name: CommandsId.NewDiagramSvg,
-            label: 'Create new diagram SVG',
+            label: '创建新的图表(SVG)',
             iconName: 'fa fa-pencil',
             execute: async () => {
                 await dialog.new(EmptyDiagram.SVG)
@@ -60,7 +60,7 @@ joplin.plugins.register({
         })
         await joplin.commands.register({
             name: CommandsId.NewSketchPng,
-            label: 'Create new sketch PNG',
+            label: '创建新草图(PNG)',
             iconName: 'fa fa-pencil',
             execute: async () => {
                 await dialog.new(EmptyDiagram.PNG, true)
@@ -68,7 +68,7 @@ joplin.plugins.register({
         })
         await joplin.commands.register({
             name: CommandsId.NewSketchSvg,
-            label: 'Create new sketch SVG',
+            label: '创建新草图(SVG)',
             iconName: 'fa fa-pencil',
             execute: async () => {
                 await dialog.new(EmptyDiagram.SVG, true)
