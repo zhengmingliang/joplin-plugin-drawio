@@ -1,3 +1,8 @@
+## 插件改动
+### 2.3.1
+* 将draw.io 默认语言改为 简体中文
+* 将页面上部分英文 翻译为 简体中文
+
 # Joplin Plugin - draw.io
 
 > WARNING: I moved my notes to Obsidian.md and I will not provide additional support for this plugin.
